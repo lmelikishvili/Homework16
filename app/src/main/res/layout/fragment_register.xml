@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context=".register.RegisterFragment">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:src="@drawable/ic_register"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:background="@drawable/login_style"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/ic_mail"
+            android:layout_marginTop="12sp"
+            android:layout_marginStart="33dp"
+            android:layout_width="35dp"
+            android:layout_height="28dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/login_style"
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/ic_user"
+            android:layout_marginTop="12sp"
+            android:layout_marginStart="33dp"
+            android:layout_width="35dp"
+            android:layout_height="28dp"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Username"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/login_style"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/ic_password"
+            android:layout_marginTop="12sp"
+            android:layout_marginStart="33dp"
+            android:layout_width="35dp"
+            android:layout_height="28dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:background="@drawable/register_style"
+        android:textColor="@color/white"
+        android:text="Register"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+
+
+</FrameLayout>
