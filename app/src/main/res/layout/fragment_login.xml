@@ -36,7 +36,7 @@
             android:layout_height="28dp"/>
 
         <EditText
-            android:id="@+id/etUsername"
+            android:id="@+id/etEmail"
             android:hint="Username"
             android:layout_marginStart="30dp"
             android:layout_width="wrap_content"
@@ -61,6 +61,7 @@
         <EditText
             android:id="@+id/etPassword"
             android:hint="Password"
+            android:inputType="textPassword"
             android:layout_marginStart="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
