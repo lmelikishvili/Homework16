@@ -16,6 +16,7 @@ class RegisterFragment : BaseFragment<FragmentRegisterBinding>(FragmentRegisterB
     override fun setupListeners() {
 
         binding.btnRegister.setOnClickListener(){
+            filedCheck()
             if (binding.etEmail.text.toString() != "eve.holt@reqres.in"){
                 Toast.makeText(context, "Email not Correct!!!", Toast.LENGTH_SHORT)
                     .show()
@@ -26,5 +27,15 @@ class RegisterFragment : BaseFragment<FragmentRegisterBinding>(FragmentRegisterB
     }
     override fun bindData() {
 
+    }
+
+    private fun filedCheck(){
+        if(binding.etEmail.text.isNullOrEmpty()){
+            Toast.makeText(context, "Email is required!!!", Toast.LENGTH_SHORT).show()
+        }else if (binding.etPassword.text.isNullOrEmpty()){
+            Toast.makeText(context, "Password is required!!!", Toast.LENGTH_SHORT).show()
+        }else if (binding.etUsername.text.isNullOrEmpty()){
+            Toast.makeText(context, "Username is required!!!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
